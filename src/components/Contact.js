@@ -2,7 +2,7 @@ import React, {useState} from "react"
 import styled from "styled-components"
 import img from "../assets/bgContactForm.jpg"
 import Button from "./Button"
-import MapVanilla from "./MapVanilla"
+import Map from "./Map"
 
 function Contact({map}) {
   const [formValues, setFormValues] = useState({});
@@ -27,7 +27,7 @@ function Contact({map}) {
 
       <Section>
           <Overlay />
-          {map && <MapDiv><MapVanilla /></MapDiv>}
+          {map && <MapDiv><Map /></MapDiv>}
           <FormContainer>
               <FormTitle>Schedule a Free Consultation</FormTitle>
               <Form>
