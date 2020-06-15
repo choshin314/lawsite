@@ -1,6 +1,7 @@
 import React from "react"
 import {Helmet} from "react-helmet"
 import Navigation from "./Navigation"
+import Contact from "./Contact"
 import Footer from "./Footer"
 import './Layout.css';
 
@@ -16,6 +17,7 @@ const Layout = ({children, contactMap, helmetData}) => (
         <Navigation />
         <main>
             {children}
+            <Contact map={contactMap ? true : false} />
         </main>
         <Footer />
     </div>
