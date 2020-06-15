@@ -24,12 +24,13 @@ const Footer = () => (
 export default Footer
 
 const FooterWrapper = styled.footer`
-    background-color: var(--darkblue);
+    background-color: var(--dark);
     color: var(--white);
     padding-top: 15px;
 `
 
 const FooterNav = styled.ul`
+    font-size: 1.2rem;
     text-align: center;
     list-style-type: none;
     display: grid;

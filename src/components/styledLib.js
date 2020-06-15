@@ -7,9 +7,9 @@ export const Button = styled.button`
     font-weight: bold;
     font-size: ${props => props.size ? `var(--${props.size})` : '1.3em'};
     transition: all .2s ease-in-out;
-    background: ${props => props.primary ? 'var(--medium)' : 'var(--white)'};
-    color: ${props => props.primary ? 'var(--white)' : 'var(--medium)'};
-    border: ${props => props.primary ? 'var(--white)' : 'var(--medium)'} 1.5px solid;
+    background: ${props => props.primary ? 'var(--primary)' : 'var(--white)'};
+    color: ${props => props.primary ? 'var(--white)' : 'var(--primary)'};
+    border: ${props => props.primary ? 'var(--white)' : 'var(--primary)'} 1.5px solid;
 
     &:hover {
         transform: scale(1.05);
@@ -42,7 +42,7 @@ export const Par = styled.p`
     
     & a {
       text-decoration: none;
-      color: var(--${props => props.linkColor || "medium"});
+      color: var(--${props => props.linkColor || "dark"});
 
       &:hover {
           font-weight: 600;

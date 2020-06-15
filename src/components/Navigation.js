@@ -4,10 +4,9 @@ import {Link} from "gatsby"
 import Hamburger from './Hamburger.js'
 import Toggler from "./Toggler.js"
 import logo from "../images/Logo.png"
-import { faAngleDown } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function Navigation() (
+const Navigation = () => (
 
     <Toggler>
     {(isOpen, setIsOpen) => (
@@ -17,7 +16,7 @@ function Navigation() (
                 <NavListItem><Link to="/">HOME</Link></NavListItem>
                 <NavListItem onClick={() => setIsOpen(prev => !prev)} onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
                     CRIMINAL DEFENSE
-                    <FontAwesomeIcon icon={faAngleDown} />
+                    <FontAwesomeIcon icon="angle-down" />
                     <SubMenu isOpen={isOpen}>
                         <SubMenuItem><Link to="/criminaldefense">CRIMINAL DEFENSE OVERVIEW</Link></SubMenuItem>
                         <SubMenuItem><Link to="/criminaldefense/st-louis-drug-lawyer">DRUG CHARGES</Link></SubMenuItem>
@@ -51,12 +50,12 @@ const Nav = styled.nav`
     width: 100%;
     height: 10vh;
     padding: 20px;
-    background-color: #f7f9ff;
+    background-color: var(--white);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
-    box-shadow: 0px 2px 50px 0px #201c44;
+    box-shadow: 0px 2px 20px 0px var(--darkgrey);
     transition: all .2s ease-in-out;
 
     & > a {
@@ -103,14 +102,22 @@ const NavListItem = styled.li`
     padding-left: 11px;
     border-right: rgba(84, 87, 93, 0.5) 1px solid;
     position: relative;
-    color: var(--darkblue);
+    color: var(--primary);
     font-weight: 900;
     cursor: pointer;
 
+    &:hover {
+        color: var(--dark);
+    }
+
     & a {
         text-decoration: none;
-        color: var(--darkblue);
+        color: var(--primary);
         font-family: 'Roboto', sans-serif;
+
+        &:hover {
+            color: var(--dark);
+        }
     }
 
     & svg {

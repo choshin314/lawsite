@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Toggler from "./Toggler"
 
@@ -13,12 +12,12 @@ function Accordion({children, light, title, bgContent, colorContent, linkColor})
                     {light ? 
                     <AccordionTitleLight onClick={() => toggleExpanded(prev => !prev)} isExpanded={isExpanded}>
                         <span>{title}</span>
-                        <FontAwesomeIcon icon={faAngleDown} />
+                        <FontAwesomeIcon icon="angle-down" />
                     </AccordionTitleLight> 
                     :
                     <AccordionTitle onClick={() => toggleExpanded(prev => !prev)} isExpanded={isExpanded}>
                         <span>{title}</span>
-                        <FontAwesomeIcon icon={faAngleDown} />
+                        <FontAwesomeIcon icon="angle-down" />
                     </AccordionTitle>       
                     }
                     <AccordionContent isExpanded={isExpanded} bgContent={bgContent} colorContent={colorContent}>
@@ -49,16 +48,19 @@ const AccordionTitle = styled.button`
     text-align: left;
     font-size: ${props => props.size === "large" ? "1.5em" : "1.2em"};
     font-weight: 700;  
-    background-color: ${props => props.isExpanded ? "var(--light)" : "var(--medium)"};
-    color: ${props => props.isExpanded ? "var(--dark)" : "var(--white)"};
+    background-color: ${props => props.isExpanded ? "var(--dark)" : "var(--primary)"};
+    color: var(--white);
+    cursor: pointer;
 
     & svg {
         transition: all 0.4s ease-in-out;
         transform: rotate(${props => props.isExpanded ? "-180deg" : "0deg"});
     }
     &:hover, &:active {
-        background-color: var(--light);
-        color: var(--dark);
+        background-color: var(--dark);
+    }
+    &:focus {
+        outline: none;
     }
 
 ` 
@@ -70,6 +72,10 @@ const AccordionTitleLight = styled(AccordionTitle)`
         background-color: var(--dark);
         color: var(--white);
     }
+
+    &:focus {
+        outline: none;
+    }
 `
 
 const AccordionContent = styled.div`
@@ -77,7 +83,7 @@ const AccordionContent = styled.div`
     overflow: hidden;
     transition: max-height 0.5s ease-in-out;
     background: var(--${props => props.bgContent || 'white'});
-    color: var(--${props => props.colorContent || 'dark'});
+    color: var(--${props => props.colorContent || 'darkgrey'});
     border-radius: 3px;
 `
 
@@ -86,7 +92,7 @@ const PaddedDiv = styled.div`
 
     & a {
         text-decoration: none;
-        color: var(--${props => props.linkColor || 'medium'});
+        color: var(--${props => props.linkColor || 'primary'});
     }
     & a:hover {
         font-weight: 900;

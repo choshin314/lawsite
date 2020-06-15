@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import styled from "styled-components"
-import img from "../assets/bgContactForm.jpg"
-import Button from "./Button"
+import img from "../images/bgContactForm.jpg"
+import {Button} from "./styledLib"
 import Map from "./Map"
 
 function Contact({map}) {
@@ -85,14 +85,14 @@ const FormContainer = styled.div`
 
 const FormTitle = styled.h2`
   display: block;
-  background: var(--mediumblue);
-  color: var(--lightblue);
+  background: var(--primary);
+  color: var(--white);
   padding: .5em 1.5em;
 `
 
 const Form = styled.form`
-  background: var(--lightblue);
-  color: var(--darkblue);
+  background: var(--white);
+  color: var(--dark);
   padding: 1em 1.5em .5em 1.5em;
   font-size: 1.2em;
   line-height: 1.5;
@@ -103,6 +103,7 @@ const InputContainer = styled.div`
 
   & input, & textarea {
       margin-bottom: 10px;
+      background-color: var(--lightgrey);
       &:focus {
           outline: none;
       }

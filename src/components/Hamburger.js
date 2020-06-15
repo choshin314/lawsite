@@ -48,20 +48,22 @@ function Hamburger(props) {
 export default Hamburger
 
 const BurgerButton = styled.button`
-  position: relative;
-  color: var(--darkblue);
-  width: 30px;
-  height: 30px;
-  border: none;
-  background-image: url(${img});
-  background-color: transparent;
-  background-size: cover;
-  background-position: center;
-  @media (min-width: 981px) {
-      display: none;
-  }
-  &:active, &:focus {
-      outline: none;
+    position: relative;
+    color: #2399C9;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-image: url(${img});
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    
+    @media (min-width: 981px) {
+        display: none;
+    }
+    &:active, &:focus {
+        outline: none;
   }
 `
 const BurgerDropdown = styled.div`
@@ -74,7 +76,7 @@ const BurgerDropdown = styled.div`
     z-index: 2;
     transform: scaleY(${props => props.isOpen ? "1.0" : "0.0"});
     transform-origin: top;
-    border: ${props => props.isOpen ? "2px solid var(--darkblue)" : "0px"};
+    border: ${props => props.isOpen ? "2px solid var(--dark)" : "0px"};
     border-radius: 10px;    
     overflow: hidden;
     transition: all .3s ease-in-out;
@@ -92,20 +94,19 @@ const BurgerList = styled.ul`
 const StyledLink = styled(Link)`
     text-decoration: none;
     text-align: left;
-    color: #201c44;
+    color: #2399C9;
     font-weight: bolder;
     font-size: 1.3rem;
     line-height: 1.5;
     margin: 0 3rem;
 
     & li {
-        border-bottom: .5px var(--lightblue) solid;
         transition: 0.3s ease;    
     }
 
     & li:hover {
-        border-top: 4px solid var(--mediumblue);
-        border-bottom: 4px solid var(--mediumblue);
+        border-top: 4px solid var(--primary);
+        border-bottom: 4px solid var(--primary);
         padding: 6px 0;
     }
 
