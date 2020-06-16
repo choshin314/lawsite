@@ -1,0 +1,190 @@
+[
+  {
+    "title": "CLASS A MISDEMEANORS IN MISSOURI",
+    "introText": "Class A Misdemeanors are the most serious misdemeanor offenses in Missouri, carrying a maximum penalty of one year in the county jail and a fine of $2000.  Although not quite as serious as a felony offense, these criminal charges can often cause just about as much damage to one’s reputation, school resume, and employment prospects as lower-level felonies.  Examples of Class A Misdemeanors include, but are not limited to:",
+    "statutes": [
+      {
+        "name": "Assault in the 4th Degree",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-565/section-565.056/index.html"
+      },
+      {
+        "name": "Domestic Assault in the 4th Degree",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-565/section-565.076/index.html"
+      },
+      {
+        "name": "Driving While Revoked (2nd or 3rd Offense)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xix/chapter-302/section-302.321/index.html"
+      },
+      {
+        "name": "Driving While Suspended (2nd or 3rd Offense)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xix/chapter-302/section-302.321/index.html"
+      },
+      {
+        "name": "DWI / DUI (Prior Offender)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-577/section-577.010/"
+      },
+      {
+        "name": "Fraudulent Use of Credit Device or Debit Device (Value Less Than $750)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-570/section-570.130/"
+      },
+      {
+        "name": "Leaving the Scene of An Accident (Damage Less Than $1000)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-577/section-577.060/"
+      },
+      {
+        "name": "Minor In Possession / MIP (Prior Offender)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xx/chapter-311/section-311.325/"
+      },
+      {
+        "name": "Minor Visibly Intoxicated (Prior Offender)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xx/chapter-311/section-311.325/"
+      },
+      {
+        "name": "Passing Bad Checks",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-570/section-570.120/index.html"
+      },
+      {
+        "name": "Peace Disturbance (Prior Offender)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-574/section-574.010/"
+      },
+      {
+        "name": "Possession of Marijuana (35g or less, but more than 10g)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-579/section-579.015/"
+      },
+      {
+        "name": "Resisting Arrest or Interfering With An Arrest",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-575/section-575.150/"
+      },
+      {
+        "name": "Stealing Under $500 Value",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-570/section-570.030/index.html"
+      },
+      {
+        "name": "Unlawful Possession of Drug Paraphernalia (Prior Offender)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-579/section-579.074/"
+      },
+      {
+        "name": "Unlawful Use of a Weapon (in some instances; others can be felonies)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-571/section-571.030/index.html"
+      },
+      {
+        "name": "Violation of Order of Protection",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxx/chapter-455/section-455.085/"
+      }
+    ]
+  },
+  {
+    "title": "CLASS B MISDEMEANORS IN MISSOURI",
+    "introText": "Class B Misdemeanors carry a maximum penalty of six months in the county jail and a fine of $1000.  Class B Misdemeanors include the following offenses:",
+    "statutes": [
+      {
+        "name": "DWI / DUI (1st Offense)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-577/section-577.010/"
+      },
+      {
+        "name": "Making a False Report",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-575/section-575.080/"
+      },
+      {
+        "name": "Driving in a Careless and Imprudent Manner (Reckless Driving)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xix/chapter-304/section-304.012/"
+      },
+      {
+        "name": "Peace Disturbance (1st Offense)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-574/section-574.010/"
+      },
+      {
+        "name": "Property Damage 2nd Degree",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-569/section-569.120/index.html"
+      },
+      {
+        "name": "Prostitution",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-567/section-567.020/"
+      },
+      {
+        "name": "Sexual Misconduct 1st Degree (1st Offense)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-566/section-566.093/"
+      },
+      {
+        "name": "Speeding (20+ MPH over speed limit)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xix/chapter-304/section-304.010/"
+      },
+      {
+        "name": "Trespass 1st Degree",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-569/section-569.140/index.html"
+      },
+      {
+        "name": "Unlawful Use of a Weapon (in some instances; others can be Class A misd. or felonies)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-571/section-571.030/index.html"
+      }
+    ]
+  },
+  {
+    "title": "CLASS C MISDEMEANORS IN MISSOURI",
+    "introText": "Class C Misdemeanors carry a maximum punishment of 15 days in the county jail and a fine of $750.  These are considered less serious offenses, and most of them should not pose much danger to reputation, job prospects, etc.  However, there are a few misdemeanors within this category that can still cause major headaches (see Assault and Sexual Misconduct, below).  Class C Misdemeanors include the following offenses:",
+    "statutes": [
+      {
+        "name": "Assault 4th Degree (in some instances; others can be class A misd.)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-565/section-565.076/index.html"
+      },
+      {
+        "name": "Littering (1st Offense)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-577/section-577.070/"
+      },
+      {
+        "name": "Private Peace Disturbance",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-574/section-574.020/"
+      },
+      {
+        "name": "Sexual Misconduct 2nd Degree",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-566/section-566.095/"
+      },
+      {
+        "name": "Most Minor Traffic Violations (Speeding, Improper Signal, Failure to Signal, etc.)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xix/chapter-304/"
+      }
+    ]
+  },
+  {
+    "title": "CLASS D MISDEMEANORS IN MISSOURI",
+    "introText": "Class D Misdemeanors carry a maximum fine of $500, but the good news is they are not jailable offenses.  However, it is important to note than many of these offenses are only Class D Misdemeanors for first-time offenses; oftentimes the second violation can be charged as at least a Class A Misdemeanor.  Examples of Class D Misdemeanors include the following offenses:",
+    "statutes": [
+      {
+        "name": "Driving While Revoked (1st Offense)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xix/chapter-302/section-302.321/index.html"
+      },
+      {
+        "name": "Driving While Suspended (1st Offense)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xix/chapter-302/section-302.321/index.html"
+      },
+      {
+        "name": "Minor in Possession / MIP (1st Offense)",
+        "url": "/criminaldefense/minor-in-possession"
+      },
+      {
+        "name": "Minor Visibly Intoxicated (1st Offense)",
+        "url": "/criminaldefense/minor-in-possession"
+      },
+      {
+        "name": "Driving Without Insurance",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xix/chapter-303/section-303.025/"
+      },
+      {
+        "name": "Operating Vehicle Without Valid License (1st Offense)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xix/chapter-302/section-302.020/"
+      },
+      {
+        "name": "Possession of Marijuana or Synthetic Cannabinoid (10g or less)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-579/section-579.015/"
+      },
+      {
+        "name": "Stealing Less Than $150 (1st Offense)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-570/section-570.030/index.html"
+      },
+      {
+        "name": "Unlawful Possession of Drug Paraphernalia (1st Offense)",
+        "url": "https://law.justia.com/codes/missouri/2018/title-xxxviii/chapter-579/section-579.074/"
+      }
+    ]
+  }
+]

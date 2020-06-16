@@ -1,0 +1,15 @@
+{
+    "felonies": [
+        {"classification": "A", "range": "10 to 30 years, or life imprisonment"},
+        {"classification": "B", "range": "5 to 15 years imprisonment"},
+        {"classification": "C", "range": "3 to 10 years imprisonment, and/or up to $10,000 fine"},
+        {"classification": "D", "range": "Up to 7 years imprisonment, and/or up to $10,000 fine"},
+        {"classification": "E", "range": "Up to 4 years imprisonment, and/or up to $10,000 fine"}
+    ],
+    "misdemeanors": [
+        {"classification": "A", "range": "Up to 1 year in jail, and/or up to $2,000 fine"},
+        {"classification": "B", "range": "Up to 6 months in jail, and/or up to $1,000 fine"},
+        {"classification": "C", "range": "Up to 15 days in jail, and/or up to $750 fine"},
+        {"classification": "D", "range": "Up to $500 fine (no incarceration)"}
+    ]
+}

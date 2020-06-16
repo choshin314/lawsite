@@ -1,0 +1,68 @@
+{
+    "reviews": [
+        {
+            "id": 1791598,
+            "lawyer_id": 4671500,
+            "lawyer_prefix": null,
+            "lawyer_firstname": "Shin",
+            "lawyer_middlename": null,
+            "lawyer_lastname": "Cho",
+            "lawyer_suffix": null,
+            "rating": 5,
+            "title": "Excellent Lawyer",
+            "body": "Mr. Shin Cho is my lawyer who took my moving violation and had it reduced so that it would not give me any points on my license and it kept my insurance from going up. He is very professional and I would high recommend him. ",
+            "review_type": "HIRED",
+            "created_at": 1553660103
+        },
+        {
+            "id": 1792661,
+            "lawyer_id": 4671500,
+            "lawyer_prefix": null,
+            "lawyer_firstname": "Shin",
+            "lawyer_middlename": null,
+            "lawyer_lastname": "Cho",
+            "lawyer_suffix": null,
+            "rating": 5,
+            "title": "Get it gone",
+            "body": "I was charged with possession of a controlled substance ,meth  and a traffic ticket , all of which Shin told me not to worry after he heard my side and received the discovery and in just over three months he got it dismissed. He kept me informed and answered any questions I had. He put me at ease and then proved his worth. Thanks Shin , freedom is priceless!",
+            "review_type": "HIRED",
+            "created_at": 1553805598
+        },
+        {
+            "id": 1843358,
+            "lawyer_id": 4671500,
+            "lawyer_prefix": null,
+            "lawyer_firstname": "Shin",
+            "lawyer_middlename": null,
+            "lawyer_lastname": "Cho",
+            "lawyer_suffix": null,
+            "rating": 5,
+            "title": "MOST RECOMMENDABLE LAWYER",
+            "body": "He was recommended to me and it was such a great decision to give him a call! I had court for two things for not having an insurance card up to date and with a high speeding ticket and he amended it to Illegal parking. He was very informative and helpful with every step of the way! I really do recommend him! HE IS AWESOME AT HIS JOB.",
+            "review_type": "HIRED",
+            "created_at": 1562877624
+        },
+        {
+            "id": 1854687,
+            "lawyer_id": 4671500,
+            "lawyer_prefix": null,
+            "lawyer_firstname": "Shin",
+            "lawyer_middlename": null,
+            "lawyer_lastname": "Cho",
+            "lawyer_suffix": null,
+            "rating": 5,
+            "title": "Great criminal defense attorney ",
+            "body": "I was charged with a 2nd degree felony assault and Shin got it dropped down to a class A harassment misdemeanor in less than 6 months with my immigration status being at risk as well. \r\nThat’s with a few of my violations, Shin still kept me out of jail and was still able to resolve the case fast!\r\nProfessional and friendly attorney who is responsive and will answer any of your questions anytime of the day including weekends. I would definitely recommend Shin to anyone in any kind of trouble including personal injury, DWI and DUI. ",
+            "review_type": "HIRED",
+            "created_at": 1564949801
+        }
+    ],
+    "meta": {
+        "average": 5.0,
+        "status": 200,
+        "current_page": 3,
+        "per_page": 10,
+        "total_pages": 3,
+        "total_entries": 24
+    }
+}
