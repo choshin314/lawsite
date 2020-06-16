@@ -21,6 +21,7 @@ export const Title = styled.h2`
   font-size: 2em;
   text-align: center;
   margin-bottom: .5em;
+  color: var(--primary);
   ${({color}) => color && css`
     color: var(--${color});
   `}

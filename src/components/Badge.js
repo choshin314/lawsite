@@ -13,13 +13,17 @@ const Badge = props => (
 const Wrapper = styled.div`
   text-align: center;
   margin: auto;
-  flex: 1 0 ${props => props.quantity < 5 ? 100/props.quantity : 200/props.quantity}%; 
+  flex: 1 1 ${props => props.quantity < 5 ? 200/props.quantity : 300/props.quantity}%; 
   height: 100%;
   position: relative;
-  width: 250px;
+  max-width: 250px;
+
+  @media (min-width: 768px) {
+    flex: 1 1 ${props => props.quantity < 5 ? 100/props.quantity : 200/props.quantity}%; 
+  }
 `
 const Img = styled.img`
-  width: 100%;
+  max-width: 200px;
 `
 
 export default Badge

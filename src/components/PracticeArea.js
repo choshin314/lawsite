@@ -5,6 +5,7 @@ import HoverCover from "./HoverCover"
 import Toggler from "./Toggler"
 
 const Wrapper = styled.div`
+    color: var(--primary);
     width: 70%;
     margin: 1rem auto;
     padding: 10px;
@@ -19,7 +20,7 @@ const Wrapper = styled.div`
         text-decoration: none;
         color: inherit;
     }
-
+    
     @media (min-width: 600px) {
         & {
             width: 47%;
@@ -47,7 +48,7 @@ function PracticeArea({link, image, text}) {
                     <Link to={link}>                
                             <Img src={image} />
                             <HoverCover text={text} hovered={isHovered} />                
-                        <h2>{text}</h2>
+                        <h3>{text}</h3>
                     </Link>
                 </Wrapper>
             )}

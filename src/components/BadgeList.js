@@ -27,23 +27,13 @@ const badgeData = [
 
 const Wrapper = styled.div`
     display: flex;
-    flex-direction: column;
-    margin: 20px 0;
+    flex-wrap: wrap;
+    margin: 2em 0;
     align-items: center;
     justify-content: center;
     background: var(--white);
     border-radius: 10px;
 
-    @media(min-width: 768px) {
-      & {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: 20px 0;
-        align-items: center;
-        justify-content: center;
-      }
-    }
 `
 
 export default BadgeList

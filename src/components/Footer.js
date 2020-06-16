@@ -47,10 +47,10 @@ const FooterNav = styled.ul`
 const StyledLink = styled(Link)`
     text-decoration: none;
     color: var(--white);
-    grid-column: ${props => props.gridColumn}
+    grid-column: ${props => props.gridColumn};
+    font-weight: 700;
 
     & li {
-        font-weight: 700;
         margin: auto 2%;
     }
 
