@@ -85,8 +85,7 @@ const AccordionContent = styled.div`
     transition: max-height 0.3s ease-in-out;
     background: var(--${props => props.bgContent || 'white'});
     color: var(--${props => props.colorContent || 'darkgrey'});
-    border-radius: 3px;
-    border-bottom: ${props => props.isExpanded ? '2px solid var(--dark)' : 'none'};
+    border-bottom: ${props => props.isExpanded ? '5px solid var(--dark)' : 'none'};
 `
 
 const PaddedDiv = styled.div`
