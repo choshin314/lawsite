@@ -66,7 +66,7 @@ const AccordionTitle = styled.button`
 
 ` 
 const AccordionTitleLight = styled(AccordionTitle)`
-    background-color: ${props => props.isExpanded ? "var(--dark)" : "var(--light)"};
+    background-color: ${props => props.isExpanded ? "var(--dark)" : "var(--cream)"};
     color: ${props => props.isExpanded ? "var(--white)" : "var(--dark)"};
 
     &:hover, &:active {

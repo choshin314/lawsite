@@ -70,7 +70,7 @@ const FlexItemMain = styled.div`
     border: none;
     line-height: 1.5;
 
-    & p {
+    & p, & ul {
         padding-bottom: 1em;
         font-family: 'Roboto';
     }
