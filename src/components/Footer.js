@@ -6,8 +6,8 @@ const Footer = () => (
     <FooterWrapper>
         <FooterNav>
             <StyledLink to="/" ><li>HOME</li></StyledLink>
-            <StyledLink to="/criminaldefense" ><li>CRIMINAL DEFENSE</li></StyledLink>
-            <StyledLink to="/st-louis-dwi-layer" ><li>DWI DEFENSE</li></StyledLink>
+            <StyledLink to="/criminal-defense" ><li>CRIMINAL DEFENSE</li></StyledLink>
+            <StyledLink to="/st-louis-dwi-lawyer" ><li>DWI DEFENSE</li></StyledLink>
             <StyledLink to="/st-louis-traffic-lawyer"><li>TRAFFIC LAW</li></StyledLink>
             <StyledLink to="/st-louis-personal-injury-lawyer"><li>PERSONAL INJURY</li></StyledLink>
             <StyledLink to="/about"><li>ATTORNEY BIO</li></StyledLink>

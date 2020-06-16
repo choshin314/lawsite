@@ -18,13 +18,13 @@ const Navigation = () => (
                     CRIMINAL DEFENSE
                     <FontAwesomeIcon icon="angle-down" />
                     <SubMenu isOpen={isOpen}>
-                        <SubMenuItem><Link to="/criminaldefense">CRIMINAL DEFENSE OVERVIEW</Link></SubMenuItem>
-                        <SubMenuItem><Link to="/criminaldefense/st-louis-drug-lawyer">DRUG CHARGES</Link></SubMenuItem>
+                        <SubMenuItem><Link to="/criminal-defense">CRIMINAL DEFENSE OVERVIEW</Link></SubMenuItem>
+                        <SubMenuItem><Link to="/criminal-defense/st-louis-drug-lawyer">DRUG CHARGES</Link></SubMenuItem>
                         <SubMenuItem><Link to="/st-louis-dwi-lawyer">DUI / DWI CHARGES</Link></SubMenuItem>
-                        <SubMenuItem><Link to="/criminaldefense/felony-charges">FELONY CHARGES</Link></SubMenuItem>
-                        <SubMenuItem><Link to="/criminaldefense/misdemeanor-charges">MISDEMEANOR CHARGES</Link></SubMenuItem>
-                        <SubMenuItem><Link to="/criminaldefense/minor-in-possession">MINOR IN POSSESSION</Link></SubMenuItem>
-                        <SubMenuItem><Link to="/criminaldefense/ranges-of-punishment">RANGES OF PUNISHMENT FOR CRIMES</Link></SubMenuItem>
+                        <SubMenuItem><Link to="/criminal-defense/felony-charges">FELONY CHARGES</Link></SubMenuItem>
+                        <SubMenuItem><Link to="/criminal-defense/misdemeanor-charges">MISDEMEANOR CHARGES</Link></SubMenuItem>
+                        <SubMenuItem><Link to="/criminal-defense/minor-in-possession">MINOR IN POSSESSION</Link></SubMenuItem>
+                        <SubMenuItem><Link to="/criminal-defense/ranges-of-punishment">RANGES OF PUNISHMENT FOR CRIMES</Link></SubMenuItem>
                     </SubMenu>
                 </NavListItem>
                 <NavListItem><Link to="/st-louis-dwi-lawyer">DWI DEFENSE</Link></NavListItem>

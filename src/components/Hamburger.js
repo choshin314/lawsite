@@ -28,12 +28,12 @@ function Hamburger(props) {
         <BurgerDropdown isOpen={isOpen} ref={burgerMenuRef}>
             <BurgerList onClick={toggleBurger}>
                 <StyledLink to="/"><li>Home</li></StyledLink>
-                <StyledLink to="/criminaldefense"><li>Criminal Defense</li></StyledLink>
-                <StyledSubLink to="/criminaldefense/st-louis-drug-lawyer"><li>Drug Charges</li></StyledSubLink>
-                <StyledSubLink to="/criminaldefense/felony-charges"><li>Felony Charges</li></StyledSubLink>
-                <StyledSubLink to="/criminaldefense/misdemeanor-charges"><li>Misdemeanor Charges</li></StyledSubLink>
-                <StyledSubLink to="/criminaldefense/minor-in-possession"><li>Minor In Possession</li></StyledSubLink>
-                <StyledSubLink to="/criminaldefense/ranges-of-punishment"><li>Ranges of Punishment for Crimes</li></StyledSubLink>
+                <StyledLink to="/criminal-defense"><li>Criminal Defense</li></StyledLink>
+                <StyledSubLink to="/criminal-defense/st-louis-drug-lawyer"><li>Drug Charges</li></StyledSubLink>
+                <StyledSubLink to="/criminal-defense/felony-charges"><li>Felony Charges</li></StyledSubLink>
+                <StyledSubLink to="/criminal-defense/misdemeanor-charges"><li>Misdemeanor Charges</li></StyledSubLink>
+                <StyledSubLink to="/criminal-defense/minor-in-possession"><li>Minor In Possession</li></StyledSubLink>
+                <StyledSubLink to="/criminal-defense/ranges-of-punishment"><li>Ranges of Punishment for Crimes</li></StyledSubLink>
                 <StyledLink to="/st-louis-dwi-lawyer"><li>DWI Defense</li></StyledLink>
                 <StyledLink to="/st-louis-traffic-lawyer"><li>Traffic Law</li></StyledLink>
                 <StyledLink to="/st-louis-personal-injury-lawyer"><li>Personal Injury</li></StyledLink>
