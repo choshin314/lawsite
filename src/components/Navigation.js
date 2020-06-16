@@ -107,7 +107,7 @@ const NavListItem = styled.li`
     cursor: pointer;
 
     &:hover {
-        color: var(--dark);
+        color: var(--accent);
     }
 
     & a {
@@ -116,7 +116,7 @@ const NavListItem = styled.li`
         font-family: 'Roboto', sans-serif;
 
         &:hover {
-            color: var(--dark);
+            color: var(--accent);
         }
     }
 

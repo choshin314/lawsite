@@ -55,7 +55,7 @@ const StyledLink = styled(Link)`
     }
 
     &:hover, &:active {
-        color: var(--cream);
+        color: var(--accent);
         font-weight: 900;
     }
 `

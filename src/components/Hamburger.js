@@ -33,7 +33,7 @@ function Hamburger(props) {
                 <StyledSubLink to="/criminal-defense/felony-charges"><li>Felony Charges</li></StyledSubLink>
                 <StyledSubLink to="/criminal-defense/misdemeanor-charges"><li>Misdemeanor Charges</li></StyledSubLink>
                 <StyledSubLink to="/criminal-defense/minor-in-possession"><li>Minor In Possession</li></StyledSubLink>
-                <StyledSubLink to="/criminal-defense/ranges-of-punishment"><li>Ranges of Punishment for Crimes</li></StyledSubLink>
+                <StyledSubLink to="/criminal-defense/ranges-of-punishment"><li>Ranges of Punishment</li></StyledSubLink>
                 <StyledLink to="/st-louis-dwi-lawyer"><li>DWI Defense</li></StyledLink>
                 <StyledLink to="/st-louis-traffic-lawyer"><li>Traffic Law</li></StyledLink>
                 <StyledLink to="/st-louis-personal-injury-lawyer"><li>Personal Injury</li></StyledLink>
@@ -105,10 +105,8 @@ const StyledLink = styled(Link)`
         transition: 0.3s ease;    
     }
 
-    & li:hover {
-        border-top: 4px solid var(--primary);
-        border-bottom: 4px solid var(--primary);
-        padding: 6px 0;
+    & li:hover, & li:active {
+        color: var(--accent);
     }
 
 `

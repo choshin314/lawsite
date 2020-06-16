@@ -7,7 +7,7 @@ import BadgeList from "../components/BadgeList"
 import PracticeAreaList from "../components/PracticeAreaList"
 
 import bgSTL from "../images/bgSTL.jpeg"
-import {Title, Par} from "../components/styledLib"
+import {Divider, Title, Par} from "../components/styledLib"
 
 const helmetData = {
     title: 'Home',
@@ -25,7 +25,7 @@ const HomePage = (props) => (
             />
             <ContentSection>
                 <BadgeList />
-                <Divider />
+                <Divider><hr /></Divider>
 
                 <Title>Client-Centered Criminal Defense at Affordable Rates</Title>
                 <Par>
@@ -34,7 +34,7 @@ const HomePage = (props) => (
                 <Par>
                 Our office is located in South County, St. Louis, MO and provides DWI defense, criminal defense, and traffic ticket defense in all of the surrounding counties.  Here at the Law Office of Shin Cho, you will find that excellence in legal representation at reasonable, affordable rates.  The first consultation is free, so don’t hesitate to call if you think you might need a defense attorney!
                 </Par>
-            <Divider />
+                <Divider><hr /></Divider>
                 <Title>Our Practice Areas</Title>
                 <PracticeAreaList />
             </ContentSection>
@@ -44,9 +44,3 @@ const HomePage = (props) => (
 
 export default HomePage
 
-const Divider = styled.hr`
-    border-top: var(--accent) solid 3px;
-    border-radius: 5px;
-    margin-top: 1em;
-    margin-bottom: 1em;
-`

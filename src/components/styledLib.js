@@ -16,6 +16,18 @@ export const Button = styled.button`
         border: transparent 1.5px solid;
     }
 `
+export const Divider = styled.span`
+    display: block;
+    margin: 1em auto;
+    width: 50%;
+    max-width: 20rem;
+    overflow: hidden;
+
+    & hr {
+        border: var(--accent) solid 3px;
+        border-radius: 2px;
+    }
+`
 
 export const Title = styled.h2`
   font-size: 2em;
