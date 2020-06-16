@@ -39,7 +39,7 @@ function Map() {
         //create <script> element for the google script, then append it to the body
 
         const gScript = window.document.createElement('script');
-        gScript.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}&libraries=places`;
+        gScript.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.GATSBY_GOOGLE_MAPS_API_KEY}&libraries=places`;
         gScript.async = true;
         window.document.body.appendChild(gScript);
 

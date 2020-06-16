@@ -2,10 +2,10 @@ import React from "react"
 import styled from "styled-components"
 import Badge from "./Badge"
 import {Title} from "../components/styledLib"
-import badgeRisingStars from "../assets/badge-risingstars.png"
-import badgeAvvoRating from "../assets/badge-avvorating.png"
-import badgeAvvoReviews from "../assets/badge-avvoreviews.png"
-import badgeNTL40 from "../assets/badge-ntltop40.png"
+import badgeRisingStars from "../images/badge-risingstars.png"
+import badgeAvvoRating from "../images/badge-avvorating.png"
+import badgeAvvoReviews from "../images/badge-avvoreviews.png"
+import badgeNTL40 from "../images/badge-ntltop40.png"
 
 const BadgeList = () => (
     <>
