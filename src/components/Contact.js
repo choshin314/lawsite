@@ -91,7 +91,7 @@ const FormTitle = styled.h2`
 `
 
 const Form = styled.form`
-  background: var(--white);
+  background: var(--cream);
   color: var(--dark);
   padding: 1em 1.5em .5em 1.5em;
   font-size: 1.2em;
@@ -103,7 +103,8 @@ const InputContainer = styled.div`
 
   & input, & textarea {
       margin-bottom: 10px;
-      background-color: var(--lightgrey);
+      background-color: var(--white);
+      border: 2px var(--primary) solid;
       &:focus {
           outline: none;
       }

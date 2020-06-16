@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 
-function ContentSection({bgSection, bgContent, children}) {
+function ContentSection({bgSection, children}) {
     return (
         <Section bgSection={bgSection} >
-            <ContentWrapper bgContent={bgContent}>{children}</ContentWrapper>    
+            <ContentWrapper>{children}</ContentWrapper>    
         </Section>
     )
 }
@@ -21,7 +21,6 @@ const ContentWrapper = styled.div`
     width: 100%;
     margin: 0 auto;
     padding: 1em .5em; 
-    background-color: var(--${props => props.bgContent ? props.bgContent : 'white'});
 
     @media(min-width: 768px) {
       width: 80%;

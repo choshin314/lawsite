@@ -3,6 +3,7 @@ import {Link} from "gatsby"
 import styled from "styled-components"
 import {window, document} from "browser-monads"
 import img from "../images/burger.svg"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 
 function Hamburger(props) {
     const [isOpen, setIsOpen] = useState(false);
@@ -49,7 +50,7 @@ export default Hamburger
 
 const BurgerButton = styled.button`
     position: relative;
-    color: #2399C9;
+    color: var(--primary);
     width: 30px;
     height: 30px;
     border: none;
@@ -58,7 +59,7 @@ const BurgerButton = styled.button`
     background-size: cover;
     background-position: center;
     cursor: pointer;
-    
+
     @media (min-width: 981px) {
         display: none;
     }
@@ -68,7 +69,7 @@ const BurgerButton = styled.button`
 `
 const BurgerDropdown = styled.div`
     width: 90vw;
-    background-color: var(--white);
+    background-color: var(--cream);
     position: absolute;
     top: 10vh;
     right: 5vw;
@@ -94,7 +95,7 @@ const BurgerList = styled.ul`
 const StyledLink = styled(Link)`
     text-decoration: none;
     text-align: left;
-    color: #2399C9;
+    color: var(--primary);
     font-weight: bolder;
     font-size: 1.3rem;
     line-height: 1.5;

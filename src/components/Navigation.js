@@ -50,7 +50,7 @@ const Nav = styled.nav`
     width: 100%;
     height: 10vh;
     padding: 20px;
-    background-color: var(--white);
+    background-color: #F1F1E6;
     position: fixed;
     top: 0;
     left: 0;
@@ -66,7 +66,7 @@ const Nav = styled.nav`
     
     & > a > img {    
         height: 3rem;
-        border: #201c44 solid .5px;
+        border: var(--white) solid .5px;
         border-radius: 3px;
     }
 
@@ -132,9 +132,9 @@ const SubMenu = styled.ul`
     position: absolute;
     left: 0;
     top: 101%;
-    background-color: var(--white);
-    border-top: 3px var(--darkblue) solid;
-    border-bottom: 3px var(--darkblue) solid;
+    background-color: var(--cream);
+    border-top: 3px var(--dark) solid;
+    border-bottom: 3px var(--dark) solid;
     border-radius: 3px;
     z-index: 3;
     transition: all 0.1s ease-in;

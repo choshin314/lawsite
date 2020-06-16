@@ -8,12 +8,13 @@
   
   
 :root {
-    --white: #f5f5f5;
-    --primary: #2399C9;
-    --dark: #002d55;
+    --white: #ffffff;
+    --cream: #F1F1E6;
+    --primary: #3A568B;
+    --dark: #002c5b;
     --darkgrey: #202020;
-    --lightgrey: #e0e0e0;
-    --accent: #ed982a;
+    --lightgrey: #f5f5f5;
+    --accent: #D6A419;
     --largeFont: 2em;
     --mediumLargeFont: 1.5em;
     --mediumFont: 1em;

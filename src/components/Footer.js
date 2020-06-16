@@ -53,6 +53,11 @@ const StyledLink = styled(Link)`
         font-weight: 700;
         margin: auto 2%;
     }
+
+    &:hover, &:active {
+        color: var(--cream);
+        font-weight: 900;
+    }
 `
 
 const Disclaimer = styled.div`

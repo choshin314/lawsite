@@ -55,6 +55,7 @@ const AccordionTitle = styled.button`
     & svg {
         transition: all 0.4s ease-in-out;
         transform: rotate(${props => props.isExpanded ? "-180deg" : "0deg"});
+        margin-left: 1em;
     }
     &:hover, &:active {
         background-color: var(--dark);
@@ -81,10 +82,11 @@ const AccordionTitleLight = styled(AccordionTitle)`
 const AccordionContent = styled.div`
     max-height: ${props => props.isExpanded ? "250vh" : "0"};
     overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.3s ease-in-out;
     background: var(--${props => props.bgContent || 'white'});
     color: var(--${props => props.colorContent || 'darkgrey'});
     border-radius: 3px;
+    border-bottom: ${props => props.isExpanded ? '2px solid var(--dark)' : 'none'};
 `
 
 const PaddedDiv = styled.div`

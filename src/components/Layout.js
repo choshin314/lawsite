@@ -7,16 +7,17 @@ import './Layout.css';
 
 // import FontAwesome and use its library component to make selected icons accessible by other components
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faPhone, faMapMarkerAlt, faEnvelope, faAngleDown, faChevronRight, faChevronLeft, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faPhone, faMapMarkerAlt, faEnvelope, faAngleDown, faChevronRight, faChevronLeft, faStar } from '@fortawesome/free-solid-svg-icons';
 // add our chosen icons to our library - now we can use them in other components
 library.add(
-  faPhone,
-  faMapMarkerAlt,
-  faEnvelope,
-  faAngleDown,
-  faChevronRight,
-  faChevronLeft,
-  faStar
+    faBars,
+    faPhone,
+    faMapMarkerAlt,
+    faEnvelope,
+    faAngleDown,
+    faChevronRight,
+    faChevronLeft,
+    faStar
   // more icons go here
 );
 

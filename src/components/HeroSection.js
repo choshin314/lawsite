@@ -41,7 +41,8 @@ const Section = styled.section`
     }
 `
 const Overlay = styled.div`
-    background-color: rgba(32,28,68,0.66);
+    background-color: #002c5b;
+    opacity: .6;
     position: absolute;
     top: 0;
     bottom: 0;
