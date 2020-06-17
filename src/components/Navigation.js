@@ -59,9 +59,11 @@ const Nav = styled.nav`
     transition: all .2s ease-in-out;
 
     & > a {
-        flex: 1 0 10rem;
+        flex: 0 0 10rem;
         padding-right: 3%;
-        align-self: center;;
+        &:focus {
+            outline: none;
+        }
     }
     
     & > a > img {    
