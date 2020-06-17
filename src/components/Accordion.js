@@ -51,6 +51,11 @@ const AccordionTitle = styled.button`
     background-color: ${props => props.isExpanded ? "var(--dark)" : "var(--primary)"};
     color: var(--white);
     cursor: pointer;
+    outline: none;
+
+    & > span {
+        outline: none;
+    }
 
     & svg {
         transition: all 0.4s ease-in-out;
@@ -59,9 +64,6 @@ const AccordionTitle = styled.button`
     }
     &:hover, &:active {
         background-color: var(--dark);
-    }
-    &:focus {
-        outline: none;
     }
 
 ` 
@@ -72,10 +74,6 @@ const AccordionTitleLight = styled(AccordionTitle)`
     &:hover, &:active {
         background-color: var(--dark);
         color: var(--white);
-    }
-
-    &:focus {
-        outline: none;
     }
 `
 
