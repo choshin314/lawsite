@@ -1,14 +1,14 @@
 import React from "react"
-import styled from "styled-components"
+import styled, {css} from "styled-components"
 
-function FlexRow({title, subtitles, paragraphs, children, bottomBorder}) {
+function FlexRow({title, subtitles, paragraphs, children, borderBtm, borderFull}) {
     return (
         <FlexContainer>
             <FlexItemSide>
                 <h2>{title.toUpperCase()}</h2>
                 {subtitles && <SubtitleList>{subtitles.map(el => <li>{el}</li>)}</SubtitleList>}
             </FlexItemSide>
-            <FlexItemMain bottomBorder={bottomBorder}>
+            <FlexItemMain borderBtm={borderBtm} borderFull={borderFull}>
                 {paragraphs ? paragraphs.map(par => <p>{par}</p>) : children}
                 {/*pass in content to be rendered via EITHER: 
                     a.) props.paragraphs, which is an array of strings; or
@@ -66,6 +66,7 @@ const SubtitleList = styled.ul`
 `
 
 const FlexItemMain = styled.div`
+    position: relative;
     padding: 1em;
     border: none;
     line-height: 1.5;
@@ -86,7 +87,12 @@ const FlexItemMain = styled.div`
 
     @media(min-width: 981px) {
         width: 73%;
-        border-bottom: ${props => props.bottomBorder ? `var(--primary) 2px solid` : 'none'};
+        ${props => props.borderBtm ? css`
+            border-bottom: var(--primary) 5px solid;
+            ` : ''}
+        ${props => props.borderFull ? css`
+            border: var(--primary) 5px solid;
+        ` : ''}
     }
 `
 

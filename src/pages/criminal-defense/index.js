@@ -28,7 +28,7 @@ const CrimDefensePage = () => (
                     <p>Choosing the right criminal defense attorney is crucial to your defense; it is a decision that can impact the entire course of your case.  For persons who have been charged with a crime or are currently under investigation, their life, liberty and livelihood are all suddenly at risk.  Oftentimes, the defendant faces the possibility of jail or prison time and potentially exorbitant fines.  When the stakes are this high, it is imperative that you hire an attorney with the ability to find the weaknesses in the State’s case, and the experience and skills that you can rely on if the case proceeds to trial.</p>
                 </Div>
                 {crimTopics.map(({title, subtitles, description, button}, i) => (
-                    <FlexRow title={title} subtitles={subtitles} bottomBorder="mediumblue"> 
+                    <FlexRow title={title} subtitles={subtitles} borderBtm> 
                         {description}
                         {button && <Link to={button.path}><Button primary size="mediumFont">{button.text}</Button></Link>}
                     </FlexRow>

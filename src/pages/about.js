@@ -39,7 +39,7 @@ const About = () => (
                 <Divider/>
                 <div>
                     <Title>Types of Cases We Handle</Title>
-                    {aboutData.map(({title, description}, i) => <FlexRow title={title} key={i} bottomBorder>{description}</FlexRow>)}
+                    {aboutData.map(({title, description}, i) => <FlexRow title={title} key={i} borderBtm>{description}</FlexRow>)}
                 </div>
             </ContentSection>
         </main>

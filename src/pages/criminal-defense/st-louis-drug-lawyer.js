@@ -34,7 +34,7 @@ const DrugCharges = () => (
                     </Par>
                 </div>
 
-            <FlexRow title="Drug Case Review Process" bottomBorder="primary">
+            <FlexRow title="Drug Case Review Process" borderBtm>
                 <StyledUL>
                     <li>Review for Suppression Issues</li>
                     <p>We review the evidence for potential constitutional violations. If the police found the drugs as a result of an unlawful search or seizure, WE CAN GET THE EVIDENCE THROWN OUT!  This means that even if you were in possession of controlled substances, we could force a dismissal if the police found the drugs as a result of an improper search or seizure.  This is one of the main reasons why you should never throw in the towel just because you think it’s a clear cut case.  You should always have a skilled criminal defense lawyer thoroughly review your case before making any decisions.</p>
@@ -47,7 +47,7 @@ const DrugCharges = () => (
                     <p>If we cannot get a satisfactory deal through negotiations, we can take the fight to them and proceed to contested motion hearings and/or trial on the drug charges.</p>
                 </StyledUL>
                 </FlexRow>
-                <FlexRow title="Types of Drug Offenses" bottomBorder="primary">
+                <FlexRow title="Types of Drug Offenses" borderBtm>
                     <p>The three most common types of drug charges are possession of a controlled substance, delivery of a controlled substance, and unlawful possession of drug paraphernalia.  If you have been charged with any of these drug offenses, the Law Office of Shin Cho is here to help.  <a href="tel:+13143121228">Call today</a> to schedule a consultation with a dedicated, experienced <Link to="/about">St. Louis criminal defense attorney.</Link></p>
 
                     <AccordionContainer>
