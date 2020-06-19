@@ -36,7 +36,6 @@ function Hamburger(props) {
                 <StyledSubLink to="/criminal-defense/ranges-of-punishment"><li>Ranges of Punishment</li></StyledSubLink>
                 <StyledLink to="/st-louis-dwi-lawyer"><li>DWI Defense</li></StyledLink>
                 <StyledLink to="/st-louis-traffic-lawyer"><li>Traffic Law</li></StyledLink>
-                <StyledLink to="/st-louis-personal-injury-lawyer"><li>Personal Injury</li></StyledLink>
                 <StyledLink to="/about"><li>Attorney Bio</li></StyledLink>
                 <StyledLink to="/client-reviews"><li>Client Reviews</li></StyledLink>
                 <StyledLink to="/contact"><li>Contact Us</li></StyledLink>

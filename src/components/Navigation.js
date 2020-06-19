@@ -3,7 +3,7 @@ import styled from "styled-components"
 import {Link} from "gatsby"
 import Hamburger from './Hamburger.js'
 import Toggler from "./Toggler.js"
-import logo from "../images/Logo.png"
+import logo from "../images/logo-bg-cream.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navigation = () => (
@@ -29,7 +29,6 @@ const Navigation = () => (
                 </NavListItem>
                 <NavListItem><Link to="/st-louis-dwi-lawyer">DWI DEFENSE</Link></NavListItem>
                 <NavListItem><Link to="/st-louis-traffic-lawyer">TRAFFIC LAW</Link></NavListItem>
-                <NavListItem><Link to="/st-louis-personal-injury-lawyer">PERSONAL INJURY</Link></NavListItem>
                 <NavListItem><Link to="/about">ATTORNEY BIO</Link></NavListItem>
                 <NavListItem><Link to="/client-reviews">CLIENT REVIEWS</Link></NavListItem>
                 <NavListItem><Link to="/contact">CONTACT US</Link></NavListItem>
@@ -49,7 +48,7 @@ const Nav = styled.nav`
     align-items: center;
     width: 100%;
     height: 10vh;
-    padding: 20px;
+    padding: 1em;
     background-color: #F1F1E6;
     position: fixed;
     top: 0;
@@ -67,9 +66,7 @@ const Nav = styled.nav`
     }
     
     & > a > img {    
-        height: 3rem;
-        border: var(--white) solid .5px;
-        border-radius: 3px;
+        height: 10vh;
     }
 
     @media (min-width: 768px) {
