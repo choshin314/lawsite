@@ -88,7 +88,7 @@ const Title = styled.h1`
     font-size: var(--largeFont);
     margin-bottom: 10px;
 `
-const HeroButton = styled.button`
+export const HeroButton = styled.button`
     cursor: pointer;
     padding: 0.5em 1em;
     border-radius: 2px;
