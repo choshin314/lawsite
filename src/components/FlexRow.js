@@ -1,9 +1,9 @@
 import React from "react"
 import styled, {css} from "styled-components"
 
-function FlexRow({title, subtitles, paragraphs, children, borderBtm, borderFull}) {
+function FlexRow({id, title, subtitles, paragraphs, children, borderBtm, borderFull}) {
     return (
-        <FlexContainer>
+        <FlexContainer id={id}>
             <FlexItemSide>
                 <h2>{title.toUpperCase()}</h2>
                 {subtitles && <SubtitleList>{subtitles.map(el => <li>{el}</li>)}</SubtitleList>}

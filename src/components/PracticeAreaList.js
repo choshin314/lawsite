@@ -10,8 +10,8 @@ const practiceAreas = [
     {
         id: 1,
         image: bgPracticeCrim,
-        link: "/criminaldefense",
-        text: "Criminal Defense"
+        link: "/criminal-defense#violent-offenses",
+        text: "Assault"
     },
     {
         id: 2,
@@ -21,15 +21,27 @@ const practiceAreas = [
     },
     {
         id: 3,
+        image: bgPracticeDWI,
+        link: "/criminal-defense/felony-charges",
+        text: "Felonies"
+    },
+    {
+        id: 4,
+        image: bgPracticeDWI,
+        link: "/criminal-defense/misdemeanor-charges",
+        text: "Misdemeanors"
+    },
+    {
+        id: 5,
         image: bgPracticeTraffic,
         link: "/st-louis-traffic-lawyer",
         text: "Traffic Law"
     },
     {
-        id: 4,
+        id: 6,
         image: bgPracticePI,
-        link: "/personalinjury",
-        text: "Personal Injury"
+        link: "/criminal-defense/#stealing",
+        text: "Stealing"
     }
 ]
 

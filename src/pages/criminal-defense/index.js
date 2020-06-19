@@ -27,8 +27,8 @@ const CrimDefensePage = () => (
                     <Title>CRIMINAL DEFENSE OVERVIEW</Title>
                     <p>Choosing the right criminal defense attorney is crucial to your defense; it is a decision that can impact the entire course of your case.  For persons who have been charged with a crime or are currently under investigation, their life, liberty and livelihood are all suddenly at risk.  Oftentimes, the defendant faces the possibility of jail or prison time and potentially exorbitant fines.  When the stakes are this high, it is imperative that you hire an attorney with the ability to find the weaknesses in the State’s case, and the experience and skills that you can rely on if the case proceeds to trial.</p>
                 </Div>
-                {crimTopics.map(({title, subtitles, description, button}, i) => (
-                    <FlexRow title={title} subtitles={subtitles} borderBtm> 
+                {crimTopics.map(({id, title, subtitles, description, button}, i) => (
+                    <FlexRow id={id} title={title} subtitles={subtitles} borderBtm> 
                         {description}
                         {button && <Link to={button.path}><Button primary size="mediumFont">{button.text}</Button></Link>}
                     </FlexRow>
@@ -52,6 +52,7 @@ const Div = styled.div`
 
 const crimTopics = [
     {
+        id: "dwi",
         title: "st. louis dwi lawyer",
         subtitles: ['Driving While Intoxicated', 'Driving Under the Influence'],
         description: [
@@ -64,6 +65,7 @@ const crimTopics = [
         }
     },
     {
+        id: "drugs",
         title: "st. louis drug lawyer",
         subtitles: ['Possession of Controlled Substance', 'Delivery of Controlled Substance', 'Unlawful Possession of Paraphernalia'],
         description: [
@@ -83,6 +85,7 @@ const crimTopics = [
         }
     },
     {
+        id: "stealing",
         title: "st. louis theft lawyer",
         subtitles: ['Stealing', 'Receiving Stolen Property', 'Shoplifting / Petty Theft'],
         description: [
@@ -98,6 +101,7 @@ const crimTopics = [
         ]
     },
     {
+        id: "violent-offenses",
         title: "st. louis violent crimes lawyer",
         subtitles: ['Assault', 'Domestic Assault', 'Homicide'],
         description: [
