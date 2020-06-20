@@ -41,9 +41,9 @@ const HomePage = (props) => (
                 Our office is located in South County, St. Louis, MO and provides DWI defense, criminal defense, and traffic ticket defense in all of the surrounding counties.  Here at the Law Office of Shin Cho, you will find that excellence in legal representation at reasonable, affordable rates.  The first consultation is free, so don’t hesitate to call if you think you might need a defense attorney!
                 </Par>
                 <Divider><hr /></Divider>
-                <Title>Our Practice Areas</Title>
-                <PracticeAreaList />
+                
             </ContentSection>
+            <PracticeAreaList />
         </main>
     </Layout>    
 )

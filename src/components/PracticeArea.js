@@ -4,56 +4,55 @@ import {Link} from "gatsby"
 import HoverCover from "./HoverCover"
 import Toggler from "./Toggler"
 
-const Wrapper = styled.div`
-    color: var(--primary);
-    width: 70%;
-    margin: 1rem auto;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    position: relative;
-
-    & a {
-        text-decoration: none;
-        color: inherit;
-    }
-    
-    @media (min-width: 600px) {
-        & {
-            width: 47%;
-        }
-    }
-
-    @media (min-width: 768px) {
-        & {
-            width: 22%
-        }
-    }
-
-`
-const Img = styled.img`
-    border-radius: 10px;
-    width: 100%;
-`
-
 function PracticeArea({link, image, text}) {
 
     return (
         <Toggler>
             {(isHovered, setIsHovered) => (
-                <Wrapper onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-                    <Link to={link}>                
-                            <Img src={image} />
-                            <HoverCover text={text} hovered={isHovered} />                
+                <Link to={link}>  
+                    <Box image={image} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>             
+                        <Overlay />
+                        <HoverCover text={text} hovered={isHovered} />                
                         <h3>{text}</h3>
-                    </Link>
-                </Wrapper>
+                    </Box>
+                </Link>
             )}
         </Toggler>
     )
 }
 
 export default PracticeArea
+
+const Box = styled.div`
+    color: var(--white);
+    background-image: url(${props => props.image});
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    padding-top: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    h3 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-transform: uppercase;
+    }
+    &:hover h3 {
+        display: none;
+    }
+
+`
+
+const Overlay = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.4);
+`

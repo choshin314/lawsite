@@ -15,8 +15,7 @@ const Overlay = styled.div`
     left: ${props => props.hovered ? 0 : "50%"};
     height: ${props => props.hovered ? "100%" : 0};
     width: ${props => props.hovered ? "100%" : 0};
-    border-radius: 10px;
-    background-image: linear-gradient(to right, rgba(32, 28, 68, 1), rgba(58, 86, 139, 1));
+    background-color: rgba(0, 44, 91, .5);
     color: #3a568b;
     transition: .2s ease-in-out;
     overflow: hidden;
