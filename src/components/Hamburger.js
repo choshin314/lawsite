@@ -66,21 +66,37 @@ const BurgerButton = styled.button`
         outline: none;
   }
 `
+// const BurgerDropdown = styled.div`
+//     width: 90vw;
+//     background-color: var(--cream);
+//     position: absolute;
+//     top: 10vh;
+//     right: 5vw;
+//     left: 5vw;
+//     z-index: 2;
+//     transform: scaleY(${props => props.isOpen ? "1.0" : "0.0"});
+//     transform-origin: top;
+//     border: ${props => props.isOpen ? "2px solid var(--dark)" : "0px"};
+//     border-radius: 10px;    
+//     overflow: hidden;
+//     transition: all .3s ease-in-out;
+// `
+
 const BurgerDropdown = styled.div`
-    width: 90vw;
+    width: 100%;
+    height: 70vh;
     background-color: var(--cream);
     position: absolute;
     top: 10vh;
-    right: 5vw;
-    left: 5vw;
+    right: 0;
     z-index: 2;
     transform: scaleY(${props => props.isOpen ? "1.0" : "0.0"});
     transform-origin: top;
-    border: ${props => props.isOpen ? "2px solid var(--dark)" : "0px"};
-    border-radius: 10px;    
+    border-bottom: ${props => props.isOpen ? "5px solid var(--dark)" : "0px"}; 
     overflow: hidden;
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
 `
+
 const BurgerList = styled.ul`
     height: 100%;
     list-style-type: none;
@@ -88,7 +104,7 @@ const BurgerList = styled.ul`
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: space-around;
 `
 
 const StyledLink = styled(Link)`
@@ -98,10 +114,12 @@ const StyledLink = styled(Link)`
     font-weight: bolder;
     font-size: 1.3rem;
     line-height: 1.5;
+    letter-spacing: 1px;
     margin: 0 3rem;
 
     & li {
-        transition: 0.3s ease;    
+        transition: 0.3s ease;   
+        text-transform: uppercase; 
     }
 
     & li:hover, & li:active {
