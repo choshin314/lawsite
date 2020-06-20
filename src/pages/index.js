@@ -98,15 +98,12 @@ const Flex = styled.div`
     justify-content: space-between;
     flex-direction: column;
     text-shadow: 2px 2px 3px black;
+
     h1 {
         font-size: 2rem;
         flex: 1 0 40%;
         text-align: left;
-        margin-right: 1.5rem;
         margin-bottom: 1rem;
-        @media(min-width: 768px) {
-            font-size: 2rem;
-        }
     }
 
     p {
@@ -121,7 +118,20 @@ const Flex = styled.div`
     @media (min-width: 768px) {
         flex-direction: row;
         margin-bottom: 2em;
+
+        h1 {
+            font-size: 2rem;
+            text-align: right;
+            margin-right: 2rem;
+        }
+        p {
+            line-height: 1.5;
+            padding-top: .3rem;
+            margin-left: 2rem;
+        }
     }
+
+
 `
 
 const Span = styled.span`
