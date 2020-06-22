@@ -1,9 +1,13 @@
 import React from "react"
 import {Link} from "gatsby"
 import styled from "styled-components"
+import logo from "../images/logo-dark.jpg"
 
 const Footer = () => (
     <FooterWrapper>
+        <LogoWrapper>
+            <img src={logo} />
+        </LogoWrapper>
         <FooterNav>
             <StyledLink to="/" ><li>HOME</li></StyledLink>
             <StyledLink to="/criminal-defense" ><li>CRIMINAL DEFENSE</li></StyledLink>
@@ -32,7 +36,17 @@ const FooterWrapper = styled.footer`
     color: var(--white);
     padding-top: 2rem;
 `
-
+const LogoWrapper = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    & > img {
+        width: 30%;
+        min-width: 200px;
+        max-width: 300px;
+        margin-bottom: 2rem;
+    }
+`
 const FooterNav = styled.ul`
     width: 80%;
     max-width: 960px;
@@ -61,20 +75,21 @@ const StyledLink = styled(Link)`
     font-weight: 700;
     position: relative;
     &::after {
-                content: "";
-                position: absolute;
-                bottom: -2px;
-                left: 0;
-                right: 0;
-                border-bottom: var(--accent) 2px solid;
-                transform: scaleX(0);
-                transform-origin: left;
-                transition: transform .35s ease-in-out;
-            }
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+        border-bottom: var(--accent) 2px solid;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform .35s ease-in-out;
+    }
 
     & li {
         margin: auto 2%;
     }
+    
     &:hover, &:focus {
         color: var(--accent);
         &::after {
