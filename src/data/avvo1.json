@@ -9,10 +9,13 @@
             "lawyer_lastname": "Cho",
             "lawyer_suffix": null,
             "rating": 5,
+            "reviewer": "anonymous",
             "title": "Wonderful Attorney",
             "body": "Shin is down to earth and will take the time to make sure you are kept informed as your case develops. Unlike other lawyers who only seem to contact you when the bill is due, he's responsive to client calls. Shin really has his clients' best interest at heart and constantly goes the extra mile for them. If you're looking for a lawyer who will truly be on your team, Shin is the lawyer for you.",
             "review_type": "UNKNOWN",
-            "created_at": 1433266621
+            "created_at": 1433266621,
+            "reviewSrc": "Avvo",
+            "reviewSiteUrl": "https://www.avvo.com/attorneys/63125-mo-shin-cho-4671500.html#client_reviews"
         },
         {
             "id": 955644,
@@ -23,10 +26,13 @@
             "lawyer_lastname": "Cho",
             "lawyer_suffix": null,
             "rating": 5,
+            "reviewer": "Pat",
             "title": "\"Truely a Blessing\" ",
             "body": "I needed a atternoy  base off of me coming from a lounge and being stopped and charged with an DWI. I had never been in trouble as well as I'm a license nurse, so I was beyond scared, because I knew this could affect my permeant record and my career. Jcs Law had great reviews and testimonies of really helping people, so I called, made a consultation appointment, and from that day forward I was at ease. Jcs Law confirm to me that they would \"fight for me\" and everything would be fine. Well, they definitely stood by their word, my case was concluded with great results and I thank Jcs Laws and(particularly) atternoy Shin Cho for all their hard work, keeping in touch with me,and their honesty. Thank you again. ",
             "review_type": "HIRED",
-            "created_at": 1446106783
+            "created_at": 1446106783,
+            "reviewSrc": "Avvo",
+            "reviewSiteUrl": "https://www.avvo.com/attorneys/63125-mo-shin-cho-4671500.html#client_reviews"
         },
         {
             "id": 976042,
@@ -37,10 +43,13 @@
             "lawyer_lastname": "Cho",
             "lawyer_suffix": null,
             "rating": 5,
+            "reviewer": "anonymous",
             "title": "Fantastic, trustworthy lawyer",
             "body": "Shin handled a criminal matter for me, and was a pleasure to work with. He was always responsive, and kept me informed on the progress of my case as it went along. He got me a great result and I would recommend him to anyone looking for aggressive representation! ",
             "review_type": "HIRED",
-            "created_at": 1446635529
+            "created_at": 1446635529,
+            "reviewSrc": "Avvo",
+            "reviewSiteUrl": "https://www.avvo.com/attorneys/63125-mo-shin-cho-4671500.html#client_reviews"
         },
         {
             "id": 1134767,
@@ -51,10 +60,13 @@
             "lawyer_lastname": "Cho",
             "lawyer_suffix": null,
             "rating": 5,
+            "reviewer": "anonymous",
             "title": "Shin is the Best!",
             "body": "There is a lot of vulnerability and hogwash out there when it comes time that you need, and should choose an attorney. I was looking for great reviews, great track record and from a great practice. Shin delivers. What impressed me most was his authenticity, level-headed was and honesty right upfront. He is soft spoken, compassionate and a great choice. Just give him a call and see what I am talking about. He helped me very much with a probation violation from out of state.",
             "review_type": "HIRED",
-            "created_at": 1452220086
+            "created_at": 1452220086,
+            "reviewSrc": "Avvo",
+            "reviewSiteUrl": "https://www.avvo.com/attorneys/63125-mo-shin-cho-4671500.html#client_reviews"
         },
         {
             "id": 1180855,
@@ -65,10 +77,13 @@
             "lawyer_lastname": "Cho",
             "lawyer_suffix": null,
             "rating": 5,
+            "reviewer": "anonymous",
             "title": "Great Attorney",
             "body": "Shin met with me on his off day and called me throughout the process to get my issue resolved in a timely manner with no issues.",
             "review_type": "HIRED",
-            "created_at": 1458085564
+            "created_at": 1458085564,
+            "reviewSrc": "Avvo",
+            "reviewSiteUrl": "https://www.avvo.com/attorneys/63125-mo-shin-cho-4671500.html#client_reviews"
         },
         {
             "id": 1308333,
@@ -79,10 +94,13 @@
             "lawyer_lastname": "Cho",
             "lawyer_suffix": null,
             "rating": 5,
+            "reviewer": "Brandi",
             "title": "Swooped in and saved the day!!",
             "body": "My orinigal lawyer skipped out on me before my case was finished. I was introduced to Shin by a friend and he seriously saved me before my case became really bad. He is professional, right to the point and handled my case with the upmost professionalism! I recommend him to everyone!",
             "review_type": "HIRED",
-            "created_at": 1476354094
+            "created_at": 1476354094,
+            "reviewSrc": "Avvo",
+            "reviewSiteUrl": "https://www.avvo.com/attorneys/63125-mo-shin-cho-4671500.html#client_reviews"
         },
         {
             "id": 1315664,
@@ -93,10 +111,13 @@
             "lawyer_lastname": "Cho",
             "lawyer_suffix": null,
             "rating": 5,
+            "reviewer": "Johnny",
             "title": "Excellent lawyer!",
             "body": "Mr. Shin Cho took care of a speeding ticket of mine. He was very polite, and handled everything with the upmost professionalism. Will use his services again and will definitely recommend to my friends and family.",
             "review_type": "HIRED",
-            "created_at": 1477461248
+            "created_at": 1477461248,
+            "reviewSrc": "Avvo",
+            "reviewSiteUrl": "https://www.avvo.com/attorneys/63125-mo-shin-cho-4671500.html#client_reviews"
         },
         {
             "id": 1316730,
@@ -107,10 +128,13 @@
             "lawyer_lastname": "Cho",
             "lawyer_suffix": null,
             "rating": 5,
+            "reviewer": "Anne",
             "title": "Speeding Ticket",
             "body": "Shin was wonderful! He was able to get my speeding ticket amended to a non moving violation and even convinced the prosecutor to lower the fees!! Shin is a total life saver and I would recommend him to anyone!",
             "review_type": "HIRED",
-            "created_at": 1477609170
+            "created_at": 1477609170,
+            "reviewSrc": "Avvo",
+            "reviewSiteUrl": "https://www.avvo.com/attorneys/63125-mo-shin-cho-4671500.html#client_reviews"
         },
         {
             "id": 1434380,
@@ -121,10 +145,13 @@
             "lawyer_lastname": "Cho",
             "lawyer_suffix": null,
             "rating": 5,
+            "reviewer": "anonymous",
             "title": "Excellent ",
             "body": "Shin was a very professional and organized lawyer. He helped me out with a case in 2016 and I received great news every phone call and he was a huge help with getting my case dropped. I would hire him again and would recommend him to anyone. I promise you will not be disappointed with his work. He was one hundred percent on my side and was always willing to answer any questions. ",
             "review_type": "HIRED",
-            "created_at": 1495005005
+            "created_at": 1495005005,
+            "reviewSrc": "Avvo",
+            "reviewSiteUrl": "https://www.avvo.com/attorneys/63125-mo-shin-cho-4671500.html#client_reviews"
         },
         {
             "id": 1434389,
@@ -135,10 +162,13 @@
             "lawyer_lastname": "Cho",
             "lawyer_suffix": null,
             "rating": 5,
+            "reviewer": "Alicia",
             "title": "Shin is the Best!",
             "body": "I am very pleased with the work that  Attorney Shin Cho did for my family. He definitely knows the law. He has always been available on short notice, he is very prompt and willing to listen. His professionalism, hard work, professional advice and willingness to help is what sets him apart. I will recommend him to my family, friends and clients b/c I know he will take care of them. Shin you are the Best! Thank you for helping me and my family! ",
             "review_type": "HIRED",
-            "created_at": 1495005986
+            "created_at": 1495005986,
+            "reviewSrc": "Avvo",
+            "reviewSiteUrl": "https://www.avvo.com/attorneys/63125-mo-shin-cho-4671500.html#client_reviews"
         }
     ],
     "meta": {
