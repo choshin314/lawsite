@@ -27,7 +27,7 @@ const About = () => (
                         <span style={{display: "block",}}>ST. LOUIS CRIMINAL DEFENSE ATTORNEY</span>
                     </>   
                 }
-                description="At the Law Office of Shin Cho, clients can rest assured that their cases are in good hands.  Shin Cho has handled well over a thousand criminal defense, DWI, traffic, and personal injury matters, through every single step of the process, from pre-charge phase to jury trial.  Shin also recognizes the importance of putting his clients’ minds at ease, and taking the weight of the case off of their backs.  Whether it be a simple traffic ticket, a DWI and/or license suspension matter, a serious felony criminal matter, or a personal injury claim, you can rely on Mr. Cho to guide you through the legal process."
+                description="At the Law Office of Shin Cho, clients can rest assured that their cases are in good hands.  Shin Cho has handled well over a thousand criminal defense, DWI, and traffic matters, through every single step of the process, from pre-charge phase to jury trial.  Shin also recognizes the importance of putting his clients’ minds at ease, and taking the weight of the case off of their backs.  Whether it be a simple traffic ticket, a DWI and/or license suspension matter, a serious felony criminal matter, or a personal injury claim, you can rely on Mr. Cho to guide you through the legal process."
                 buttonText="Contact Us"
             />
             <ContentSection>
@@ -99,12 +99,6 @@ const aboutData = [
         title: "traffic tickets",
         description: [
             <p>Traffic tickets can cause major headaches for those on the receiving end, due to mandatory court appearances, potential increases in insurance premiums, and even the possibility of jail time for more serious tickets. The Law Office of Shin Cho is here for all traffic lawyer services. We will appear in court on your behalf, which means you will not need to waste your own time in traffic court. Additionally, we will make it our goal to resolve your traffic ticket so as to avoid any points against your license.</p>
-        ]
-    },
-    {
-        title: "personal injury",
-        description: [
-            <p>If you or a loved one have been injured as a result of someone else’s negligence, e.g., in a car accident or slip and fall, a personal injury attorney can help you recover compensation for your injuries. The Law Office of Shin Cho represents personal injury claimants and strives to maximize our clients’ compensation for their injuries.</p>
         ]
     }
     
