@@ -3,24 +3,38 @@ import styled from "styled-components"
 import img from "../images/bgContactForm.jpg"
 import {Button} from "./styledLib"
 import Map from "./Map"
+import { navigate } from "gatsby"
+
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
+}
 
 function Contact({map}) {
-  const [formValues, setFormValues] = useState({});
+  const [state, setState] = useState({});
 
   const handleChange = event => {
       const {value, name} = event.target;
-      setFormValues(prev => ({ ...prev, [name]: value }))  
+      setState(prev => ({ ...prev, [name]: value }))  
   }
 
   const handleSubmit = event => {
       event.preventDefault();
-      console.log(formValues);
-      setFormValues({
-        name: '',
-        email: '',
-        phone: '',
-        message: ''
+      const form = event.target;
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded'},
+        body: encode({
+          'form-name': form.getAttribute('name'),
+          ...state
+        })
       })
+        .then(() => {
+          console.log('success')
+          setState({name: '', email: '', phone: '', message: ''})
+        })
+        .catch(error => console.log(error))
   }
   
   return(
@@ -30,12 +44,14 @@ function Contact({map}) {
           {map && <MapDiv><Map /></MapDiv>}
           <FormContainer>
               <FormTitle>Schedule a Free Consultation</FormTitle>
-              <Form>
+              <Form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit}>
+                  <input type="hidden" name="bot-field" />
+                  <input type="hidden" name="form-name" value="contact" />
                   <InputContainer>
-                      <Input onChange={handleChange} value={formValues.name} type="text" name="name" placeholder="Name" gridColumn="1 / span 1"/>
-                      <Input onChange={handleChange} value={formValues.email} type="email" name="email" placeholder="Email Address" gridColumn="2 / span 1"/>
-                      <Input onChange={handleChange} value={formValues.phone} type="tel" name="phone" placeholder="Phone Number" gridColumn="1 / 2" />
-                      <TextArea onChange={handleChange} value={formValues.message} name="message" placeholder="Brief message describing your case (type of charge(s), court location, date of arrest/citation, etc.)" gridColumn="1 / span 2"/>
+                      <Input onChange={handleChange} value={state.name} type="text" name="name" placeholder="Name" gridColumn="1 / span 1"/>
+                      <Input onChange={handleChange} value={state.email} type="email" name="email" placeholder="Email Address" gridColumn="2 / span 1"/>
+                      <Input onChange={handleChange} value={state.phone} type="tel" name="phone" placeholder="Phone Number" gridColumn="1 / 2" />
+                      <TextArea onChange={handleChange} value={state.message} name="message" placeholder="Brief message describing your case (type of charge(s), court location, date of arrest/citation, etc.)" gridColumn="1 / span 2"/>
                   </InputContainer>
                   <Button primary size="2em" onClick={handleSubmit}>Send Message</Button>
               </Form>
