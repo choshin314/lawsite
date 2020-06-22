@@ -59,14 +59,27 @@ const StyledLink = styled(Link)`
     color: var(--white);
     grid-column: ${props => props.gridColumn};
     font-weight: 700;
+    position: relative;
+    &::after {
+                content: "";
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                right: 0;
+                border-bottom: var(--accent) 2px solid;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform .35s ease-in-out;
+            }
 
     & li {
         margin: auto 2%;
     }
-
-    &:hover, &:active {
+    &:hover, &:focus {
         color: var(--accent);
-        font-weight: 900;
+        &::after {
+            transform: scaleX(1);
+        }
     }
 `
 
