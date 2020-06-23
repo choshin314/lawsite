@@ -6,9 +6,13 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetaData: {
+    siteUrl: 'https://www.defenseattorneystl.com',
+  },
   plugins: [
     'gatsby-plugin-styled-components',
-    'gatsby-plugin-react-helmet'
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap'
     //... other plugins
   ]
 }
