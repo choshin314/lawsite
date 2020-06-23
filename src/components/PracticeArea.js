@@ -29,18 +29,15 @@ const Box = styled.div`
     background-size: cover;
     background-position: top center;
     width: 100%;
-    padding-top: 75%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
+    padding-top: 75%;    
     position: relative;
     h3 {
         position: absolute;
         top: 50%;
-        transform: translateY(-50%);
+        left: 50%;
+        transform: translate(-50%, -50%);
         text-transform: uppercase;
+        white-space: nowrap;
     }
     &:hover h3 {
         display: none;
