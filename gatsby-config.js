@@ -6,7 +6,7 @@
 
 module.exports = {
   /* Your site config here */
-  siteMetaData: {
+  siteMetadata: {
     siteUrl: 'https://www.defenseattorneystl.com',
   },
   plugins: [
