@@ -12,7 +12,7 @@ function encode(data) {
 }
 
 function Contact({map}) {
-  const [state, setState] = useState({});
+  const [state, setState] = useState({name: '', email: '', phone: '', message: ''});
 
   const handleChange = event => {
       const {value, name} = event.target;
@@ -26,13 +26,14 @@ function Contact({map}) {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded'},
         body: encode({
-          'form-name': form.getAttribute('name'),
+          "form-name": "contact",
           ...state
         })
       })
         .then(() => {
           console.log('success')
           setState({name: '', email: '', phone: '', message: ''})
+          navigate("/success")
         })
         .catch(error => console.log(error))
   }
@@ -44,7 +45,14 @@ function Contact({map}) {
           {map && <MapDiv><Map /></MapDiv>}
           <FormContainer>
               <FormTitle>Schedule a Free Consultation</FormTitle>
-              <Form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit}>
+              <Form 
+                name="contact" 
+                method="post" 
+                action="/success"
+                data-netlify="true" 
+                data-netlify-honeypot="bot-field" 
+                onSubmit={handleSubmit}
+              >
                   <input type="hidden" name="bot-field" />
                   <input type="hidden" name="form-name" value="contact" />
                   <InputContainer>
