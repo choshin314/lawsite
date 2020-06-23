@@ -49,22 +49,6 @@ const practiceAreas = [
     }
 ]
 
-const FlexContainer = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    background-color: var(--white);
-    border-radius: 10px;
-`
-
-// const PracticeAreaList = () => {
-//     return (
-//         <FlexContainer>
-//             {practiceAreas.map(area => <PracticeArea key={area.id} image={area.image} text={area.text} link={area.link} />)}
-//         </FlexContainer>
-//     )
-// }
 
 const PracticeAreaList = () => (
     <Section>

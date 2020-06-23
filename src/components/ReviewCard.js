@@ -4,9 +4,6 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import profileImg from "../images/profile-pic.png"
 
 function ReviewCard({name, reviewDate, reviewSrc, reviewUrl, body, title}) {
-    const googleUrl = "https://www.google.com/search?sxsrf=ALeKk02bOO21aKWm5m5oBjuDhFM04Tly3w%3A1591674678484&ei=NgffXp-THbeawbkP09OSuA0&q=law+office+of+shin+cho&oq=law+office+of+shin+cho&gs_lcp=CgZwc3ktYWIQAzIECCMQJzIECCMQJzICCCY6CggjELACELADECdQseQDWLHkA2D75gNoAXAAeACAAUiIAUiSAQExmAEAoAEBqgEHZ3dzLXdpeg&sclient=psy-ab&ved=0ahUKEwifhrye6vPpAhU3TTABHdOpBNcQ4dUDCAw&uact=5#lrd=0x87d8c838f697ca3f:0xb94963aa14a49a88,1,,,";
-
-    const avvoUrl = "https://www.avvo.com/attorneys/63125-mo-shin-cho-4671500.html#client_reviews";
     const date = new Date(reviewDate * 1000).toLocaleString().split(',')[0];
 
     return (

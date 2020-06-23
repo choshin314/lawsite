@@ -1,21 +1,21 @@
 import React from 'react';
-import Layout from '../components/layout';
+import Layout from "../components/Layout"
 import styled from "styled-components"
 import pic from '../images/sent.png'
 
-const helmet={
+const helmet = {
     title: "Successful Submission",
     description: "Success Page"
 }
 
-const Success = props => (
+const Success = () => (
   <Layout helmetData={helmet}>
     <Section>
         <Div>
             <h1>Success!</h1>
             <span>Thank you for contacting the Law Office of Shin Cho!</span>
             <ImgDiv>
-                <img src={pic} />
+                <img src={pic} alt="message sent"/>
             </ImgDiv>
             <span>You will receive a response within 24 hours.</span>
         </Div>

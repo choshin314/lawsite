@@ -1,9 +1,8 @@
 import React, {useState, useEffect, useRef} from "react"
 import {Link} from "gatsby"
 import styled from "styled-components"
-import {window, document} from "browser-monads"
+import {window} from "browser-monads"
 import img from "../images/burger.svg"
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 
 function Hamburger(props) {
     const [isOpen, setIsOpen] = useState(false);
