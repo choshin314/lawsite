@@ -1,6 +1,7 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import styled from "styled-components"
 import ReviewCard from "./ReviewCard"
+import SliderDots from "./SliderDots"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 
 const ReviewSlider = ({title, reviews}) => {
@@ -8,6 +9,14 @@ const ReviewSlider = ({title, reviews}) => {
         translate: 0,
         current: 0
     })
+
+    //Autoplay 
+    useEffect(() => {
+        let timer = setTimeout(nextSlide, 4500);
+        return function cleanup() {
+            clearTimeout(timer)
+        }
+    }, [state.current])
 
     //Need to increment state.translate by 1fr on each click
     const nextSlide = () => {
@@ -49,6 +58,7 @@ const ReviewSlider = ({title, reviews}) => {
             </SliderTrack>
             <SliderBtn prev onClick={prevSlide}><FontAwesomeIcon icon="chevron-left" size="2x"/></SliderBtn>
             <SliderBtn next onClick={nextSlide}><FontAwesomeIcon icon="chevron-right" size="2x"/></SliderBtn>
+            <SliderDots slides={reviews} current={state.current}/>
         </SliderContainer>
     )
 
