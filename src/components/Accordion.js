@@ -62,7 +62,7 @@ const AccordionTitle = styled.button`
         transform: rotate(${props => props.isExpanded ? "-180deg" : "0deg"});
         margin-left: 1em;
     }
-    &:hover, &:active {
+    &:hover {
         background-color: var(--dark);
     }
 
@@ -71,7 +71,7 @@ const AccordionTitleLight = styled(AccordionTitle)`
     background-color: ${props => props.isExpanded ? "var(--dark)" : "var(--cream)"};
     color: ${props => props.isExpanded ? "var(--white)" : "var(--dark)"};
 
-    &:hover, &:active {
+    &:hover {
         background-color: var(--dark);
         color: var(--white);
     }
