@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import {navigate} from "gatsby"
 import Layout from "../components/Layout"
 import {HeroButton} from "../components/HeroSection.js"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
@@ -25,7 +26,7 @@ const HomePage = (props) => (
                         <p>Attorney Shin Cho has a proven record of excellence in case results and client satisfaction. He understands what's on the line for his clients and prides himself on his client service and his ability to obtain optimal results in the courtroom. Schedule a free consultation today to see how he can help you.</p>
                     </Flex>
 
-                    <Button><span>Contact Us Today</span><FontAwesomeIcon icon="chevron-right" size="xs" /></Button>
+                    <Button onClick={() => navigate("/contact")}><span>Contact Us Today</span><FontAwesomeIcon icon="chevron-right" size="xs" /></Button>
                     
                 </Content>
             </Section>
