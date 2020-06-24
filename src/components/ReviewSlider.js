@@ -18,7 +18,7 @@ const ReviewSlider = ({title, reviews}) => {
         }
     }, [state.current])
 
-    //Need to increment state.translate by 1fr on each click
+    //Need to increment state.translate by percentage proportionate to one slide per each click
     const nextSlide = () => {
         let incrementTranslate = 100 / reviews.length;
         //if we are on the last slide, reset to starting position
@@ -42,22 +42,24 @@ const ReviewSlider = ({title, reviews}) => {
     return (
         <SliderContainer>
             <SliderTitle>{title}</SliderTitle>
-            <SliderTrack length={reviews.length} translate={state.translate}>
-                {reviews.map((review, i) => (
-                    <Slide>
-                        <ReviewCard 
-                            name={review.name}
-                            title={review.title}
-                            reviewDate={review.reviewDate}
-                            reviewSrc={review.reviewSrc}
-                            reviewUrl={review.reviewSiteUrl}
-                            body={review.body}
-                        />
-                    </Slide>
-                ))}
-            </SliderTrack>
-            <SliderBtn prev onClick={prevSlide}><FontAwesomeIcon icon="chevron-left" size="2x"/></SliderBtn>
-            <SliderBtn next onClick={nextSlide}><FontAwesomeIcon icon="chevron-right" size="2x"/></SliderBtn>
+            <Slider>
+                <SliderTrack length={reviews.length} translate={state.translate}>
+                    {reviews.map((review, i) => (
+                        <Slide>
+                            <ReviewCard 
+                                name={review.name}
+                                title={review.title}
+                                reviewDate={review.reviewDate}
+                                reviewSrc={review.reviewSrc}
+                                reviewUrl={review.reviewSiteUrl}
+                                body={review.body}
+                            />
+                        </Slide>
+                    ))}
+                </SliderTrack>
+                <SliderBtn prev onClick={prevSlide}><FontAwesomeIcon icon="chevron-left" size="2x"/></SliderBtn>
+                <SliderBtn next onClick={nextSlide}><FontAwesomeIcon icon="chevron-right" size="2x"/></SliderBtn>
+            </Slider>
             <SliderDots slides={reviews} current={state.current}/>
         </SliderContainer>
     )
@@ -66,27 +68,35 @@ const ReviewSlider = ({title, reviews}) => {
 
 const SliderContainer = styled.div`
     width: 100%;
-    overflow: hidden;
     position: relative;
     margin-bottom: 2rem;
+`
+const SliderTitle = styled.h2`
+    color: var(--primary);
+    font-size: 2em;
+    margin-bottom: 1.5rem;
+    text-align: center;
+`
+const Slider = styled.div`
     padding-top: 1rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 `
 const SliderBtn = styled.button`
     position: absolute;
-    top: 50%;
+    top: 0;
     ${props => props.prev ? `left: 0;` : `right: 0;`}
-    transform: translateY(50%);
+    height: 100%;
+    outline: none;
     cursor: pointer;
     background: transparent;
     border: transparent;
     color: var(--primary);
-`
-
-const SliderTitle = styled.h2`
-    color: var(--primary);
-    font-size: 2em;
-    margin-bottom: 1.5em;
-    text-align: center;
+    &:hover, &:active, &:focus {
+        background: rgba(0,0,0,.2);
+        outline: none;
+    }
 `
 
 //SliderTrack width should be # of slides (props.length) * slideWidth (400px).  
@@ -103,7 +113,10 @@ const SliderTrack = styled.div`
 
 const Slide = styled.div`
     grid-column: span 1;
-    width: 350px;
+    width: 300px;
+    @media(min-width: 370px) {
+        width: 350px;
+    }
     @media(min-width: 768px) {
         width: 400px;
     }
