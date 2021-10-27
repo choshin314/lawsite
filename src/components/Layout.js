@@ -3,6 +3,7 @@ import {Helmet} from "react-helmet"
 import Navigation from "./Navigation"
 import Contact from "./Contact"
 import Footer from "./Footer"
+import Banner from "./Banner"
 import './Layout.css';
 
 // import FontAwesome and use its library component to make selected icons accessible by other components
@@ -32,6 +33,7 @@ const Layout = ({children, contactMap, helmetData}) => (
             <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         </Helmet>
         <Navigation />
+        <Banner />
         <main>
             {children}
             <Contact map={contactMap ? true : false} />
