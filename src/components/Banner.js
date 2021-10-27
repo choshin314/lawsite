@@ -5,7 +5,7 @@ function Banner() {
   return (
     <BannerDiv>
       <div>
-        <p>Please be advised that the Law Office of Shin Cho has <span class="underline">permanently closed</span></p>
+        <p>Please be advised that the Law Office of Shin Cho has <span class="da-gist">permanently closed</span></p>
       </div>
     </BannerDiv>
   )
@@ -20,7 +20,7 @@ const BannerDiv = styled.div`
   width: 100%;
   z-index: 10;
   background-color: var(--primary);
-  color: white;
+  color: var(--white);
   font-weight: 500;
   font-size: 1rem;
 
@@ -34,8 +34,9 @@ const BannerDiv = styled.div`
     text-align: center;
   }
 
-  & .underline {
+  & .da-gist {
     text-decoration: underline;
+    color: var(--accent);
   }
 
   @media(min-width: 768px) {
